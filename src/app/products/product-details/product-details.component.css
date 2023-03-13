@@ -1,0 +1,196 @@
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 3.2em;
+     color: #5543ca;
+    background: #5543ca;
+    background: -moz-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
+    background: -webkit-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
+    background: linear-gradient(to right,#f4524d  0%,#5543ca  100%) !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+
+.hr{
+  height: 2px;
+  background-color: black;
+  background-image: linear-gradient(to left,#f4524d  0%,#5543ca  100%);
+  border: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+}
+
+.title-container {
+  text-align: center;
+}
+
+.pic-container {
+  text-align: center;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.item {
+  font-size: 2rem;
+}
+
+
+
+
+/* .item {
+    margin: 5rem;
+    width:250px;
+    height:fit-content;
+    background:#fff;
+    border: solid black;
+    border-color: black;
+
+    border-width: fit-content;
+} */
+
+
+/*#region details button*/ 
+.detailsB {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   .detailsB.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   .detailsB.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   .detailsB.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   .detailsB.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   .detailsB.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   .detailsB.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   .detailsB:hover .circle {
+    width: 100%;
+   }
+   
+   .detailsB:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(0, 0);
+    rotate: 180deg;
+   }
+   
+   .detailsB:hover .button-text {
+    color: #fff;
+   }
+
+   /*#endregion*/
+
+/*#region purchase button*/
+   .purchaseB {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .purchaseB:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .purchaseB:active {
+    transform: translateY(-1px);
+  }
+   /*#endregion*/
+
+

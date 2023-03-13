@@ -1,0 +1,12 @@
+<app-product-navbar (sortDate)="sortByDate()" (sortPrice)="sortByPrice()"></app-product-navbar>
+<div class="sort">
+    <label class="sort-label">Sort By:</label>
+   <button class="button-85" (click)="sortByPrice()">Price</button>
+   <button class="button-85" (click)="sortByDate()">Date</button>
+  </div>
+<div class="container"> 
+<div  *ngFor="let prod of products">
+<app-product (onPurchase)="handlePurchase($event)" [product]="prod"></app-product>
+<!-- </div>
+<app-product-form (onCreate)="handleCreate($event)"></app-product-form>
+</div> -->

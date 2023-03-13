@@ -1,0 +1,37 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<app-product-navbar></app-product-navbar>
+<section class="container">
+<h1 class="title">List new product</h1>
+<form [noValidate]="false" class="contact-form row" (submit)="onSubmit(name.value,desc.value,image.value,price.value,city.value,phone.value)">
+    <div class="form-field col-lg-6">
+        <input minlength="1" required maxlength="30" #name id="name" class="input-text js-input" type="text" required>
+        <label class="label" for="name">Name</label>
+     </div>
+     <div class="form-field col-lg-6 ">
+        <input required #phone id="phone" class="input-text js-input" type="number" required>
+        <label class="label" for="Phone">Phone</label>
+     </div>
+     <div class="form-field col-lg-6 ">
+        <input minlength="2" required #city id="city" class="input-text js-input" type="text" required>
+        <label class="label" for="city">City</label>
+     </div>
+      <div class="form-field col-lg-6 ">
+        <input min="1" required #price id="price" class="input-text js-input" type="number" required>
+        <label class="label" for="price">Price</label>
+     </div>
+     <div class="form-field col-lg-12">
+        <input required id="img" #image class="input-text js-input" type="url" required>
+        <label class="label" for="img">Picture Url</label>
+     </div>
+     <div class="form-field col-lg-12">
+        <input maxlength="300" required #desc id="description" class="input-text js-input" type="text" required>
+        <label class="label" for="description">Description</label>
+     </div>
+     <div class="form-field col-lg-12">
+        <input class="submit-btn" type="submit" value="Create">
+     </div>
+</form>
+</section>

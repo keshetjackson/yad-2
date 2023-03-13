@@ -1,0 +1,40 @@
+<app-product-navbar></app-product-navbar>
+
+<div class="container">
+    <h1 class="title">
+         {{product.name}}
+    </h1>
+    <div class="pic-div">
+       <img class="pic" [src]="product.picture"/>
+    </div>
+    <div class="item-price item">
+        Price: {{product.price | currency}}
+        <hr class="hr"/>
+    </div>
+    <div class="item-city item">
+        City: {{product.city}}
+        <hr class="hr"/>
+    </div>
+    <div class="item-phone item">
+        Phone Number: {{product.phone | phoneNumber}}
+        <hr class="hr"/>
+    </div>
+    <div class="item-date item">
+        Publish Date: {{product.published | date: 'short'}}
+        <hr class="hr"/>
+    </div>
+    <div class="button-container">
+    <div class="item-home">
+        <button (click)="goHome()" class="learn-more detailsB">
+            <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Go Home</span>
+        </button>
+    </div>
+    <div class="item-purchase">
+       <button class="purchaseB">Purchase</button>
+    </div>
+</div>
+    
+</div>

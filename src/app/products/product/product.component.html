@@ -1,0 +1,26 @@
+<div class="item">
+    <div>
+        Name: {{product.name}}
+    </div>
+    <div>
+        Publish Date: {{product.published | date:'shortDate'}} 
+    </div>
+    <div>
+       <img class="pic" [src]="product.picture"/>
+    </div>
+    <div>
+        Price: {{product.price | currency}}
+    </div>
+    <div>
+        <button (click)="getDetails(product.id)" class="learn-more detailsB">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Get Details</span>
+          </button>
+    </div>
+    <div>
+        <button class="purchaseB" (click)="Purchase()">Purchase</button>
+    </div>
+</div>
+
